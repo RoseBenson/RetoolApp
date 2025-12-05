@@ -4,7 +4,7 @@ let artworksData = [];
 let artistToArtworksMap = new Map();
 let artistsWithArtworks = [];
 
-// File upload handling
+// The file upload handling
 const artistsFileInput = document.getElementById('artistsFile');
 const artworksFileInput = document.getElementById('artworksFile');
 const processBtn = document.getElementById('processBtn');

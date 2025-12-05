@@ -228,13 +228,13 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📊 CSV Data Structure Guide</h1>
+            <h1>CSV Data Structure Guide</h1>
             <p>Working example of Artists and Artworks data with processing requirements</p>
         </div>
 
         <!-- Overview Section -->
         <div class="section">
-            <h2 class="section-title">🎯 Data Processing Overview</h2>
+            <h2 class="section-title">Data Processing Overview</h2>
             
             <div class="stats">
                 <div class="stat-card">
@@ -258,18 +258,18 @@
             <div class="info-box">
                 <h3>Processing Steps:</h3>
                 <ul>
-                    <li>✅ Parse both CSV files</li>
-                    <li>✅ Remove artworks where <span class="highlight">ConstituentID</span> is empty</li>
-                    <li>✅ Remove duplicate columns from Artworks data</li>
-                    <li>✅ Create Map data structure for artist-to-artwork associations</li>
-                    <li>✅ Handle artworks with multiple artists</li>
+                    <li>Parse both CSV files</li>
+                    <li>Remove artworks where <span class="highlight">ConstituentID</span> is empty</li>
+                    <li>Remove duplicate columns from Artworks data</li>
+                    <li>Create Map data structure for artist-to-artwork associations</li>
+                    <li>Handle artworks with multiple artists</li>
                 </ul>
             </div>
         </div>
 
         <!-- Artists CSV Structure -->
         <div class="section">
-            <h2 class="section-title">👨‍🎨 Artists.csv Structure (Original Data)</h2>
+            <h2 class="section-title">Artists.csv Structure (Original Data)</h2>
             
             <div class="info-box">
                 <h3>Columns: 9 fields</h3>
@@ -358,10 +358,10 @@
 
         <!-- Artworks BEFORE Processing -->
         <div class="section">
-            <h2 class="section-title">🖼️ artworks_sampled.csv - BEFORE Processing</h2>
+            <h2 class="section-title">artworks_sampled.csv - BEFORE Processing</h2>
             
             <div class="warning">
-                <strong>⚠️ Issues to Fix:</strong><br>
+                <strong>Issues to Fix:</strong><br>
                 • Contains <span class="highlight">duplicate columns</span> that also exist in Artists.csv<br>
                 • Some rows have <span class="highlight">empty ConstituentID</span> values<br>
                 • Has 30+ columns (many are duplicates)
@@ -475,13 +475,13 @@
             </div>
 
             <div class="warning">
-                <strong>🔴 Row Removal Example:</strong> The last row will be removed because ConstituentID is empty!
+                <strong>Row Removal Example:</strong> The last row will be removed because ConstituentID is empty!
             </div>
         </div>
 
         <!-- Artworks AFTER Processing -->
         <div class="section">
-            <h2 class="section-title">✨ artworks_sampled.csv - AFTER Processing</h2>
+            <h2 class="section-title">artworks_sampled.csv - AFTER Processing</h2>
             
             <div class="success">
                 <strong>✓ Clean Data:</strong><br>
@@ -608,7 +608,7 @@ artistToArtworksMap = Map {
 
             <div class="comparison">
                 <div class="comparison-box before">
-                    <h3>❌ Without Map</h3>
+                    <h3>Without Map</h3>
                     <p>To find artworks for an artist:</p>
                     <ul>
                         <li>Loop through all 5,000 artworks</li>
@@ -618,7 +618,7 @@ artistToArtworksMap = Map {
                     </ul>
                 </div>
                 <div class="comparison-box after">
-                    <h3>✅ With Map</h3>
+                    <h3>With Map</h3>
                     <p>To find artworks for an artist:</p>
                     <ul>
                         <li>Instant lookup by ID</li>
@@ -632,7 +632,7 @@ artistToArtworksMap = Map {
 
         <!-- Usage Example -->
         <div class="section">
-            <h2 class="section-title">💡 How It Works</h2>
+            <h2 class="section-title"> How It Works</h2>
             
             <div class="code-block">
 // 1. User searches for "Ludwig Mies van der Rohe"
@@ -694,14 +694,14 @@ if (!artworks || artworks.length === 0) {
             <div class="info-box">
                 <h3>Key Takeaways:</h3>
                 <ul>
-                    <li>✅ No repeating data between tables</li>
-                    <li>✅ ConstituentID is the linking key</li>
-                    <li>✅ Empty ConstituentID rows are filtered out</li>
-                    <li>✅ Duplicate columns removed from Artworks</li>
-                    <li>✅ Map provides O(1) lookup performance</li>
-                    <li>✅ Multiple artists per artwork handled correctly</li>
-                    <li>✅ Placeholder images for missing ImageURL</li>
-                    <li>✅ Search limited to artists with artworks in collection</li>
+                    <li>No repeating data between tables</li>
+                    <li>ConstituentID is the linking key</li>
+                    <li>Empty ConstituentID rows are filtered out</li>
+                    <li>Duplicate columns removed from Artworks</li>
+                    <li>Map provides O(1) lookup performance</li>
+                    <li>Multiple artists per artwork handled correctly</li>
+                    <li>Placeholder images for missing ImageURL</li>
+                    <li>Search limited to artists with artworks in collection</li>
                 </ul>
             </div>
         </div>

@@ -194,17 +194,9 @@ This project is open source and available under the MIT License.
 
 Rose Benson - [@RoseBenson](https://github.com/RoseBenson)
 
-Project Link: [https://github.com/RoseBenson/RetoolApp](https://github.com/RoseBenson/RetoolApp)
+Project Link: https://rosebenson.github.io/MoMaAppforRetool/
 
-## Deployment
 
-This application can be deployed using GitHub Pages:
-
-1. Push your code to GitHub
-2. Go to repository Settings
-3. Navigate to Pages section
-4. Select source branch (main)
-5. Click Save
-6. Your site will be available at: `https://rosebenson.github.io/RetoolApp/`
 
 Note: Ensure CSV files are included in the repository for the "Load Sample Data" feature to work on GitHub Pages.
+
